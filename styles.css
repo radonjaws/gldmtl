@@ -1,0 +1,44 @@
+/* Minimal landing page styles for tvsc */
+:root{
+  --bg: #ad8f0aff;
+  --max-width: 720px;
+  --gap: 24px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
+body{
+  background-color: var(--bg);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  color: #fff;
+}
+
+/* Full-height center */
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:32px;
+}
+
+/* Constrain and center the logo */
+.logo-wrap{
+  width:100%;
+  max-width:var(--max-width);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: transparent;
+  padding: 24px;
+}
+
+/* Keep the image contained and responsive */
+.logo{
+  width:100%;
+  height:auto;
+  object-fit:contain;
+  display:block;
+  max-height:60vh; /* prevent oversized images on tall screens */
+}
